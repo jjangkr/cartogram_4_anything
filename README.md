@@ -24,7 +24,8 @@ In total data you can use energy consumption and GRDP of each province in Korea 
 korpopmap1@data <- left_join(korpopmap1@data, total, 
                              by = c('code.1' = 'code'))  ## add data set to SPDF 'korpopmap1'
 
-summary(korpopmap1@data)  # you can clarify what kind of data are added and understand statistics of data set
+summary(korpopmap1@data)  
+# you can clarify what kind of data are added and understand statistics of data set
 
 kor_en1998 <- cartogram(korpopmap1, "en1998", itermax=2)  
 # cartogram of energy consumption of Koean province in 1998   
@@ -32,5 +33,5 @@ kor_en1998 <- cartogram(korpopmap1, "en1998", itermax=2)
 
 tm_shape(kor_en1998) + tm_fill("en1998", style="cat") + 
   tm_borders() + tm_layout(frame=F)     
-# generate cartogram of Koean energy consumption in 1998
+# generate cartogram of Korean energy consumption in 1998
 ```
