@@ -4,9 +4,6 @@ How to add any attribute what you want to generate cartogram of Korea
 
 Korean cartogram for anything what you want!!
 
-```{r setup, include=T}
-knitr::opts_chunk$set(echo = F)
-```
 ```{r first}
 library(Kormaps); library(tmap); library(cartogram); library(dplyr); library(readxl)
 
