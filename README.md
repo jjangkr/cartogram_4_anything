@@ -12,11 +12,12 @@ setwd("file path")  # add any path what you need
 data("korpopmap1")  # data set in Kormaps package
 
 total <- read_excel('regionaldata_SP.xlsx', 
-                  sheet = 'total', col_names = T )  # I uploaded "regionaldata_SP.xlsx" file in this repository.
+                  sheet = 'total', col_names = T )  
+# I uploaded "regionaldata_SP.xlsx" file in this repository.
 
 str(total)  # check the type of total data
 ```
-In total data you can use energy consumption of each province in Korea from 1998 to 2015, GRDP of each province in Korea from 1998 to 2015 and R&D investments of each province in Korea from 2010 to 2015.
+In total data you can use energy consumption and GRDP of each province in Korea from 1998 to 2015 and R&D investments of each province in Korea from 2010 to 2015.
 
 
 ```{r second }
